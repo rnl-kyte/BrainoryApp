@@ -18,6 +18,12 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Verify Java version
+        run: java -version
+
+      - name: List project files (debug)
+        run: ls -la app/src/main/java/com/devbytes/brainory/
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
